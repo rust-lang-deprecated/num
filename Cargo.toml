@@ -8,7 +8,7 @@ categories = [ "algorithms", "data-structures", "science" ]
 license = "MIT/Apache-2.0"
 repository = "https://github.com/rust-num/num"
 name = "num"
-version = "0.1.42"
+version = "0.1.43"
 readme = "README.md"
 
 [badges]
@@ -18,11 +18,11 @@ travis-ci = { repository = "rust-num/num" }
 
 [dependencies.num-bigint]
 optional = true
-version = "0.1.42"
+version = "0.1.45"
 
 [dependencies.num-complex]
 optional = true
-version = "0.1.42"
+version = "0.1.44"
 
 [dependencies.num-integer]
 version = "0.1.36"
@@ -32,7 +32,7 @@ version = "0.1.35"
 
 [dependencies.num-rational]
 optional = true
-version = "0.1.42"
+version = "0.1.43"
 
 [dependencies.num-traits]
 version = "0.2.0"

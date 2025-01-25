@@ -5,13 +5,13 @@ rust:
   - nightly
 matrix:
   include:
-    - rust: 1.8.0
+    - rust: 1.19.0
       before_script:
-        # rand 0.3.22 started depending on rand 0.4, which requires rustc 1.15
-        # manually hacking the lockfile due to the limitations of cargo#2773
         - cargo generate-lockfile
-        - sed -i -e 's/"rand 0.[34].[0-9]\+/"rand 0.3.20/' Cargo.lock
-        - sed -i -e '/^name = "rand"/,/^$/s/version = "0.3.[0-9]\+"/version = "0.3.20"/' Cargo.lock
+        - cargo update -p num-iter --precise 0.1.43
+        - cargo update -p num-integer --precise 0.1.45
+        - cargo update -p num-traits --precise 0.2.15
+        - cargo update -p libc --precise 0.2.163
 sudo: false
 script:
   - cargo build --verbose

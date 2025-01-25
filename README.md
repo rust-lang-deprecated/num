@@ -2,7 +2,7 @@
 
 [![crate](https://img.shields.io/crates/v/num.svg)](https://crates.io/crates/num)
 [![documentation](https://docs.rs/num/badge.svg)](https://docs.rs/num)
-![minimum rustc 1.8](https://img.shields.io/badge/rustc-1.8+-red.svg)
+![minimum rustc 1.19](https://img.shields.io/badge/rustc-1.19+-red.svg)
 [![Travis status](https://travis-ci.org/rust-num/num.svg?branch=master)](https://travis-ci.org/rust-num/num)
 
 A collection of numeric types and traits for Rust.
@@ -57,5 +57,4 @@ Release notes are available in [RELEASES.md](RELEASES.md).
 
 ## Compatibility
 
-Most of the `num` crates are tested for rustc 1.8 and greater.
-The exception is `num-derive` which requires at least rustc 1.15.
+The `num` crate is tested for rustc 1.19 and greater.
